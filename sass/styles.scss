@@ -1,0 +1,832 @@
+
+$logo: 'Satisfy', cursive;
+$main-font: 'Montserrat', sans-serif;
+$primary-color: #F28627;
+
+@mixin font-icon {
+  font-size: 50px;
+
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  padding: 30px;
+  border-radius: 50%;
+}
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: $main-font;
+}
+
+/************************
+      Landing page
+************************/
+#header {
+  color: white;
+  max-height: 100vh;
+  height: 100vh;
+  background: #1c1c1c;
+}
+
+.landing {
+  text-align: center;
+  padding-top: 10vh;
+  h1 {
+    font-weight: lighter;
+    text-align: center;
+    font-family: $logo;
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1em;
+    color: $primary-color;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  p {
+    font-size: 1em;
+    font-weight: 100;
+  }
+}
+
+.nav-bar {
+  margin: 0 auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  a {
+    margin: 0 auto;
+    display: block;
+    font-weight: 200;
+    font-size: 1.2em;
+    border: 1px solid $primary-color;
+    padding: 10px;
+    background: inherit;
+    color: $primary-color;
+    text-decoration: none;
+    width: 30vw;
+    border-radius: 15px;
+}
+}
+
+.landing-description {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+
+#header p {
+    text-align: center;
+    animation: fadein 3.5s;
+    -moz-animation: fadein 3.5s; /* Firefox */
+    -webkit-animation: fadein 3.5s; /* Safari and Chrome */
+    -o-animation: fadein 3.5s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/**********************
+      div = "ABOUT ME"
+***********************/
+
+
+#work {
+  width: 100vw;
+  color:  #1c1c1c;
+  background: white;
+    h3 {
+      text-align: center;
+      padding-bottom: 4vh;
+      padding-top: 4vh;
+      color: $primary-color;
+      font-weight: 300;
+      font-size: 32px;
+
+  }
+}
+
+.about-me {
+  padding-top: 1vh;
+  width: 80vw;
+  margin: 0 auto;
+  padding-bottom: 10vh;
+
+  h2 {
+    font-weight: 400;
+    color: #f28627;
+    text-align: center;
+}
+  p {
+    font-weight: 300;
+    text-align: center;
+    color: #989898;
+  }
+}
+
+.symbols{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 32px;
+}
+
+.symbols {
+  .fa-child, .fa-book, .fa-archive {
+  @include font-icon;
+  }
+}
+
+.left, .center, .right {
+  margin-bottom: 10vh;
+}
+
+/**************************
+      portfolio
+*************************/
+
+#portfolio {
+  height: 100vh;
+  h2 {
+    color: $primary-color;
+    font-weight: 300;
+    text-align: center;
+    font-size: 32px;
+
+  }
+  p {
+    color: #989898;
+    text-align: center;
+  }
+}
+
+
+/************************
+        Contact page
+************************/
+
+ #contact-me {
+   h2 {
+     color: $primary-color;
+     font-weight: 300;
+     text-align: center;
+     font-size: 32px;
+   }
+   p {
+     color: #989898;
+     text-align: center;
+     max-width: 80vw;
+     margin: 0 auto;
+   }
+
+ }
+
+.modal-btn {
+  margin-top: 10vh;
+  padding-bottom: 10vh;
+  button {
+    margin: 0 auto;
+    display: block;
+    font-weight: 200;
+    font-size: 15px;
+    border: 1px solid $primary-color;
+    padding: 10px;
+    background: white;
+    color: $primary-color;
+    text-decoration: none;
+    width: 50vw;
+    border-radius: 15px;
+    outline: none;
+  }
+}
+/*****************
+    modal
+  ****************/
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    color: $primary-color;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+input {
+  margin-top: 5vh;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid $primary-color;
+  padding: 10px 5px 10px;
+  width: 60vw;
+}
+.email-text {
+  margin-top: 5vh;
+}
+
+textarea {
+  margin-top: 5vh;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid $primary-color;
+  padding: 10px 5px 10px;
+  width: 60vw;
+  height: 20vh;
+}
+
+form {
+  text-align: center;
+  p{
+    margin-top:5vh;
+
+    padding-bottom: 10px;
+  }
+  .form-btn {
+    margin-top: 10px;
+    padding: 10px 10px 10px;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    background: white;
+    border-radius: 25px;
+    width: 40vw;
+  }
+}
+
+/***************
+    footer
+***************/
+
+#footer {
+  background: #1c1c1c;
+
+  p {
+    padding-top: 3vh;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+    font-weight: 200;
+  }
+  .fa-github-square {
+    font-size: 30px;
+    color: white;
+  }
+  .fa-codepen {
+    font-size: 30px;
+    color: white;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 30vw;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************
+    Media queries
+**********************/
+
+/********************
+    FIX LANDSCAPE MODE ON PHONE
+*********************/
+
+
+
+@media only screen and (min-width: 321px) {
+    .landing h1 {
+      font-size: 1.8em;
+      padding-top: 2vh;
+    }
+    .landing h2{
+      font-size: 1.5em;
+    }
+}
+
+
+@media only screen and (min-width: 600px){
+  .landing {
+      h1 {
+      font-size: 3em;
+    }
+      h2 {
+    font-size: 2.5em;
+    }
+      p {
+    font-size: 2em;
+    }
+    .nav-bar a {
+    font-size: 2em;
+  }
+}
+
+#work h3 {
+  font-size: 3em;
+}
+
+  .about-me {
+
+    h2 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 2em;
+    }
+  }
+.symbols {
+ .fa-child, .fa-book, .fa-archive {
+    font-size: 100px;
+    padding: 60px 70px 60px;
+    border: 3px solid $primary-color;
+  }
+}
+
+#portfolio {
+  h2 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
+
+#contact-me {
+      h2 {
+      font-size: 3em;
+    }
+    p {
+      font-size:2em;
+    }
+  }
+  .modal-btn button {
+    font-size: 2em;
+  }
+  #footer p {
+    font-size: 1.3em;
+  }
+
+  #footer {
+    .social {
+      padding-bottom: 3vh;
+    }
+    .fa-github-square {
+      font-size: 60px;
+    }
+    .fa-codepen {
+      font-size: 60px;
+    }
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1024px){
+      .landing {
+        padding-top: 5vh;
+        }
+      .landing-description {
+        padding-top: 7vh;
+        padding-bottom: 7vh;
+      }
+      .nav-bar a {
+        width: 25vw;
+        &:hover {
+        color:#FFF;
+        background: $primary-color;
+        width: 15vw;
+        transition: 1s;
+      }
+      }
+
+      .about-me {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          font-size: 1.5em;
+        }
+        p {
+          font-size: 1.5em;
+        }
+        .left {
+          max-width: 25vw;
+        }
+        .center {
+          max-width: 25vw;
+        }
+        .right {
+          max-width: 25vw;
+        }
+      }
+
+      .symbols {
+        .fa-child, .fa-book, .fa-archive{
+          font-size: 70px;
+        }
+
+      }
+
+        #contact-me p {
+          font-size: 1.4em;
+        }
+
+        #myBtn {
+          font-size: 1.4em;
+        }
+
+      .modal-btn button {
+        max-width: 30vw;
+        &:hover {
+        color:#FFF;
+        background: $primary-color;
+        width: 15vw;
+        transition: 1s;
+        }
+      }
+
+      .modal{
+        width: 100%;
+        height: 100%;
+      }
+
+
+
+      input {
+        font-size: 1.3em;
+      }
+
+      textarea {
+        font-size: 1.3em;
+      }
+      .form-btn {
+        font-size: 2em;
+        &:hover {
+        color:#FFF;
+        background: $primary-color;
+        width: 15vw;
+        transition: 1s;
+        }
+      }
+
+      #footer p {
+        font-size: 1.5em;
+      }
+      .social {
+        padding-bottom: 2vh;
+      }
+}
+
+
+
+@media only screen and (min-width: 1140px) {
+    #header {
+      max-width: 100vw;
+    }
+    .nav-bar a {
+      width: 15vw;
+      font-size: 1.3em;
+    }
+
+    .landing-description {
+      padding: 4vh 0 4vh;
+    }
+
+
+    .about-me {
+      padding-top: 5vh;
+    }
+
+    .name-email {
+      display: flex;
+      justify-content: space-between;
+      max-width: 40vw;
+      margin: 0 auto;
+    }
+
+    .email-input {
+      width: 18vw;
+    }
+    .name-input {
+      width: 18vw;
+    }
+
+    textarea {
+      width: 39vw;
+      margin-top: 0;
+    }
+
+    .modal-btn button {
+      width: 10vw;
+    }
+
+    form{
+      .form-btn {
+      width: 10vw;
+      font-size: 1.5em;
+      border-radius: 25px;
+    }
+  }
+
+  #footer {
+    p {
+      font-size: 1.3em;
+    }
+  }
+
+  .social {
+    padding-bottom: 2vh;
+    max-width: 20vw;
+    .fa-github-square, .fa-codepen {
+      font-size: 60px;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) and (orientation: landscape) {
+    .landing {
+      padding-top: 5vh;
+    }
+    .landing h1 {
+      font-size: 1.5em;
+    }
+    .landing h2 {
+      font-size: 1.1em;
+    }
+    .landing p {
+      font-size: 0.8em;
+    }
+    .landing-description {
+      padding: 3vh 0 3vh;
+    }
+    .nav-bar a {
+      font-size: 10px;
+    }
+    #work h3 {
+      font-size: 2em;
+    }
+    .symbols .fa-child, .symbols .fa-book, .symbols .fa-archive {
+      font-size: 2.5em;
+      color: #F28627;
+      border: 1px solid #F28627;
+      padding: 30px;
+      border-radius: 50%; }
+      .about-me h2 {
+        font-size: 1em;
+      }
+      .about-me p {
+        font-size: 1em;
+      }
+      #portfolio h2 {
+        font-size: 2em;
+      }
+      #portfolio p {
+        font-size: 1em;
+      }
+      #contact-me h2 {
+        font-size: 2em;
+      }
+      #contact-me p {
+        font-size: 1em;
+      }
+
+
+    #footer{
+      p {
+        font-size: 1em;
+      }
+      .fa-github-square {
+        font-size: 20px;
+      }
+      .fa-codepen {
+        font-size: 20px;
+      }
+      .social {
+        padding-bottom: 2vh;
+      }
+    }
+    .modal-btn button {
+      font-size: 1em;
+    }
+}
+
+@media only screen  and (min-width: 501px) and (max-width: 1020px) and (orientation: landscape) {
+    .landing {
+      padding-top: 2vh;
+    }
+    .landing h1 {
+      font-size: 2em;
+    }
+    .landing h2 {
+      font-size: 1.5em;
+    }
+    .landing p {
+      font-size: 1em;
+    }
+
+    .nav-bar {
+      padding-top: 0;
+      a {
+        padding: 5px 2px 5px;
+        font-size: 1em !important;
+      }
+    }
+
+    .landing-description {
+      padding: 0vh 0 3vh;
+    }
+
+    #work h3 {
+      font-size: 2em;
+    }
+    .symbols .fa-child, .symbols .fa-book, .symbols .fa-archive {
+      font-size: 2.5em;
+      color: #F28627;
+      border: 1px solid #F28627;
+      padding: 30px;
+      border-radius: 50%; }
+      .about-me h2 {
+        font-size: 1em;
+      }
+      .about-me p {
+        font-size: 1em;
+      }
+      #portfolio h2 {
+        font-size: 2em;
+      }
+      #portfolio p {
+        font-size: 1em;
+      }
+      #contact-me h2 {
+        font-size: 2em;
+      }
+      #contact-me p {
+        font-size: 1em;
+      }
+    #footer {
+      height: 22vh;
+    }
+
+    #footer{
+      p {
+        font-size: 1em;
+      }
+      .fa-github-square {
+        font-size: 20px;
+      }
+      .fa-codepen {
+        font-size: 20px;
+      }
+    }
+    .modal-btn button {
+      font-size: 1em;
+      width: 25vw;
+    }
+}
+
+@media only screen  and (width: 1024px) and (height: 600px) {
+    .landing {
+      padding-top: 2vh;
+    }
+    .landing h1 {
+      font-size: 3em;
+    }
+    .landing h2 {
+      font-size: 2em;
+    }
+    .landing p {
+      font-size: 1.5em;
+    }
+
+    .nav-bar {
+      padding-top: 0;
+      a {
+        padding: 5px;
+      }
+    }
+
+    .landing-description {
+      padding: 4vh 0 4vh;
+    }
+
+    #work h3 {
+      font-size: 2em;
+    }
+    .symbols .fa-child, .symbols .fa-book, .symbols .fa-archive {
+      font-size: 2.5em;
+      color: #F28627;
+      border: 1px solid #F28627;
+      padding: 30px;
+      border-radius: 50%; }
+      .about-me h2 {
+        font-size: 1em;
+      }
+      .about-me p {
+        font-size: 1em;
+      }
+      #portfolio h2 {
+        font-size: 2em;
+      }
+      #portfolio p {
+        font-size: 1em;
+      }
+      #contact-me h2 {
+        font-size: 2em;
+      }
+      #contact-me p {
+        font-size: 1em;
+      }
+
+
+    #footer{
+      p {
+        font-size: 1em;
+      }
+      .fa-github-square {
+        font-size: 20px;
+      }
+      .fa-codepen {
+        font-size: 20px;
+      }
+      .social {
+        padding-bottom: 2vh;
+      }
+    }
+    .modal-btn button {
+      font-size: 1em;
+    }
+}
