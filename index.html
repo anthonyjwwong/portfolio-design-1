@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Front-End Web Developer - Anthony</title>
   <link href="css/styles.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Satisfy" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Satisfy|Tajawal" rel="stylesheet">
 
 </head>
 <body>
-    <div id="header">
+    <header>
         <div class="landing">
             <h1>Anthony Wong</h1>
             <h2>Front-End Developer</h2>
@@ -25,82 +25,82 @@
               <a href="#work" class="work-button" >Welcome</a>
             </div>
         </div>
-    </div>
+    </header>
+    <main>
+        <div id="work">
 
-    <div id="work">
-
-        <h3>Workflow</h3>
-              <div class="about-me hideme">
-        <div class="left">
-          <div class="symbols">
-              <i class="fas fa-child"></i>
-          </div>
-            <h2>Consultation</h2>
-          <p>Getting an understanding of what the main goal is for us to achieve.</p>
-        </div>
-        <div class="center">
-          <div class="symbols">
-              <i class="fas fa-book"></i>
-          </div>
-            <h2>Planning</h2>
-           <p>Sketches and designs will be created first. Prototypes will also be shown.</p>
-        </div>
-        <div class="right">
-          <div class="symbols">
-              <i class="fas fa-archive"></i>
-          </div>
-            <h2>Coding</h2>
-              <p>When we are ready to start, the website will be coded using HTML5, CSS3(Scss) and JavaScript.</p>
-        </div>
-
-        </div>
-
-      </div>
-
-      <div id="portfolio" class="hideme">
-        <h2>Portfolio</h2>
-          <p>	&#8592;Under Construction&#8594;</p>
-      </div>
-
-      <div id="contact-me">
-        <h2>Contact Me</h2>
-            <p>Hi, there. Do you have any questions or want to work together on any particular project?</p>
-
-
-
-        <!-- Trigger/Open The Modal -->
-        <div class="modal-btn">
-            <button id="myBtn">Click here</button>
-        </div>
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <br>
-              <!--Form from FormSpree-->
-              <form method="POST" action="https://formspree.io/anthonywongjw@gmail.com">
-                <p>Hey there, if you have any projects you want to work on together, send me a message!</p>
-                <p>I'll get back to you within one or two days</p>
-                <div class="name-email">
-                <input type="text" name="name" class="name-input" placeholder="Name...">
-
-                <input type="email" name="email" class="email-input" placeholder="Email...">
+            <h3>Workflow</h3>
+                  <div class="about-me hideme">
+            <div class="left">
+              <div class="symbols">
+                  <i class="fas fa-child"></i>
               </div>
-                <textarea name="message" class="email-text" placeholder="Message..."></textarea>
-                <br>
-                <button class="form-btn" type="submit">Send</button>
-              </form>
+                <h2>Consultation</h2>
+              <p>Getting an understanding of what the main goal is for us to achieve.</p>
+            </div>
+            <div class="center">
+              <div class="symbols">
+                  <i class="fas fa-book"></i>
+              </div>
+                <h2>Planning</h2>
+              <p>Sketches and designs will be created first. Prototypes will also be shown.</p>
+            </div>
+            <div class="right">
+              <div class="symbols">
+                  <i class="fas fa-archive"></i>
+              </div>
+                <h2>Coding</h2>
+                  <p>When we are ready to start, the website will be coded using HTML5, CSS3(Scss) and JavaScript.</p>
+            </div>
 
             </div>
+
           </div>
 
+          <div id="portfolio" class="hideme">
+            <h2>Portfolio</h2>
+              <p>	&#8592;Under Construction&#8594;</p>
+          </div>
+
+          <div id="contact-me">
+            <h2>Contact Me</h2>
+                <p>Hi, there. Do you have any questions or want to work together on any particular project?</p>
 
 
-      </div>
 
-      <div id="footer">
+            <!-- Trigger/Open The Modal -->
+            <div class="modal-btn">
+                <button id="myBtn">Click here</button>
+            </div>
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <br>
+                  <!--Form from FormSpree-->
+                  <form method="POST" action="https://formspree.io/anthonywongjw@gmail.com">
+                    <p>Hey there, if you have any projects you want to work on together, send me a message!</p>
+                   
+                    <div class="name-email">
+                    <input type="text" name="name" class="name-input" placeholder="Name...">
+
+                    <input type="email" name="email" class="email-input" placeholder="Email...">
+                  </div>
+                    <textarea name="message" class="email-text" placeholder="Message..."></textarea>
+                    <br>
+                    <button class="form-btn" type="submit">Send</button>
+                  </form>
+
+                </div>
+              </div>
+
+
+
+          </div>
+      </main>
+      <footer>
         <p>Everything handcoded by me&trade;</p>
         <div class="social">
           <a href="https://github.com/anthonyjwwong" target="_blank">
@@ -112,7 +112,7 @@
 
         </div>
 
-      </div>
+      </footer>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
     integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
      crossorigin="anonymous"></script>
